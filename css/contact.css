@@ -29,7 +29,7 @@ html { background-color: #D9D9D9; }
 }
 
 .image-bg-fixed-height {
-	background: url('/Users/aidan.law17/Desktop/AToZWebsite/img/banner.png') no-repeat center center scroll;
+	background: url('/Users/aidan.law17/Desktop/AToZWebsite/img/background.png') no-repeat center center scroll;
     height: 450px;
 }
 
@@ -42,17 +42,24 @@ section {
 }
 
 .section-heading {
-    margin: 30px 0;
+    margin-right: 100px;
+    margin-left: 100px;
     font-size: 4em;
 }
 
 
 .section-lead {
-    margin: 30px 0;
+   margin-right: 100px;
+   margin-left: 100px;
 }
 
 .section-paragraph {
-    margin: 30px 0;
+   margin-right: 100px;
+   margin-left: 100px;
+}
+.section-sub{
+  font-family: inherit;
+  font-size: 40px;
 }
 
 footer {
