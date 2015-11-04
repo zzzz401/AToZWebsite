@@ -47,6 +47,9 @@ section {
     font-size: 4em;
 }
 
+.info {
+  display: inline;
+}
 
 .section-lead {
    margin-right: 100px;
