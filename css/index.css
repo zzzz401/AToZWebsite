@@ -11,6 +11,7 @@ body {
   border-style: solid;
   border-color: black;
   border-bottom-color: white;
+  min-width: 420px;
 }
 html { background-color: #D9D9D9; }
 
@@ -24,19 +25,18 @@ html { background-color: #D9D9D9; }
 }
 
 .image-bg-fluid-height {
-  background: url('/Users/aidan.law17/Desktop/AToZWebsite/img/background.jpg') no-repeat center center scroll;
+  background: url('/img/background.jpg') no-repeat center center scroll;
   padding: 100px 0;
 }
 
 .image-bg-fixed-height {
-  background: url('/Users/aidan.law17/Desktop/AToZWebsite/img/products/Lamborghini.jpg') no-repeat center center scroll;
+  background: url('/img/products/Lamborghini.jpg') no-repeat center center scroll;
   height: 450px;
 }
 
 .img-center {
   margin: 0 auto;
 }
-
 
 section {
   padding: 75px 0;
