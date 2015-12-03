@@ -102,15 +102,14 @@ footer {
 }
 
 .product-photo {
-  margin-left: 20px;
   margin-top: 50px;
-  width: 300px;
-  height: 300px;
-  border-color: black;
-  border-style: double;
-  border-width: 20px;
-  border-top: 10px;
-  border-bottom: 50px;
-  border-left: 50px;
-  border-right: 50px;
+  margin-left: 100px;
+  width: 305px;
+  height: 305px;
+  border-style: solid;
+}
+
+.product-paragraph {
+  margin-top: 150px;
+  margin-right: 150px;
 }
