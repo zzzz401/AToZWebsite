@@ -1,4 +1,10 @@
-.comingSoon {
+.comingSoonPhoto {
   margin-left: auto;
-  width: 6em
+  margin-right: auto;
+  width: 400px;
+}
+.comingSoonText{
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
 }
