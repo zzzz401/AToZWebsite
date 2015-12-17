@@ -16,7 +16,10 @@ body {
 }
 html { background-color: #D9D9D9; }
 
-.image-bg-fluid-height,
+.image-bg-fluid-height {
+  background: url('/img/background.jpg') no-repeat center center scroll;
+  padding: 100px 0;
+}
 .image-bg-fixed-height {
   text-align: center;
   -webkit-background-size: cover;
