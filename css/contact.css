@@ -16,33 +16,20 @@ html {
   background: url('/img/background.jpg') no-repeat center center scroll;
   padding: 100px 0;
 }
-.img-center {
-  margin: 0 auto;
-}
-section {
-  padding: 75px 0;
-}
-.section-heading {
-  margin: auto;
-  width: 60%;
-  padding: 10px;
-  font-size: 3em;
-}
-.section-lead {
-  margin: auto;
-  width: 80%;
-  padding: 10px;
-}
+
 footer {
   margin: 0px;
 }
-.modal-open {
-    overflow: scroll;
+
+.navbar-right {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto;
+  font-size: 100px:
 }
 
-.info {
-  display: inline;
-}
-.map {
-  height: 180px;
+.modal-open {
+  overflow: scroll;
 }

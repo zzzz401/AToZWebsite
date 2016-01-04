@@ -1,88 +1,35 @@
-body {
-  margin-top: 50px;
-  margin-right: 150px;
-  margin-left: 150px;
+body{
+  max-width: 1080px;
+  margin: 0 auto !important;
+  float: none !important;
   border-style: solid;
   border-color: black;
-  border-top-color: white;
   border-bottom-color: white;
-  /*min-width: 1000px;*/
+  padding-right: 0 !important;
+  min-width: 600px;
 }
-html { background-color: #D9D9D9; }
-
-.image-bg-fluid-height,
-.image-bg-fixed-height {
-  text-align: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+html {
+  background-color: #D9D9D9;
+  padding-right: 0 !important;
 }
-
-
-.img-center {
-  margin: 0 auto;
-}
-
-section {
-  padding: 75px 0;
-}
-
-.section-heading {
-  font-size: 4em;
-  margin-right: 100px;
-  margin-left: 100px;
-}
-
-
-.section-lead {
-  margin-right: 100px;
-  margin-left: 100px;
-}
-
-.section-paragraph {
-  /*padding-right: 100px;*/
-/*  margin: 0 auto;
-  text-align: center;*/
-  margin-right: -50px;
-  margin-left: -50px;
-    width: 20em
+.background-accent {
+  background: url('/img/background.jpg') no-repeat center center scroll;
+  padding: 100px 0;
 }
 
 footer {
   margin: 0px;
 }
 
-@media(max-width:768px) {
-  section {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-  .section-heading {
-    font-size: 2em;
-  }
+.navbar-right {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto;
+  font-size: 100px:
 }
 
-.product-photo {
-  margin-left: auto;
-  margin-right: auto;
-  height: 305px;
-  width: 480px;
-  border-style: solid;
-  max-width: 730px;
-}
-
-.product-paragraph {
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 18px;
-
-}
-.server-action-menu {
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, rgba(30, 87, 153, 0.2) 0%, rgba(125, 185, 232, 0) 100%);
-    background-repeat: repeat;
-    border-radius:10px;
-    padding: 5px;
+.modal-open {
+  overflow: scroll;
 }
