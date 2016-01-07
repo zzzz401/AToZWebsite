@@ -49,10 +49,7 @@
             <p class="navbar-text">Sales: (815) 459-2505</p>
           </li>
           <li>
-            <a href="www.facebook.com"><i class="fa fa-facebook-official"></i></a>
-          </li>
-          <li>
-            <a href="www.twitter.com"><i class="fa fa-twitter"></i></a>
+            <a href="https://twitter.com/atozvei"><i class="fa fa-twitter"></i></a>
           </li>
         </ul>
       </div>
@@ -161,11 +158,13 @@
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>
-        if ($(this).width() < 800) {
-          $('#extra-icons').hide();
-        } else {
-          $('#extra-icons').show();
-        }
+        $(document).ready(function($) {
+          if ($(this).width() < 800) {
+            $('#extra-icons').hide();
+          } else {
+            $('#extra-icons').show();
+          }
+        });
         $(window).resize(function() {
           if ($(this).width() < 800) {
             $('#extra-icons').hide();

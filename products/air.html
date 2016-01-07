@@ -51,7 +51,7 @@
   <br>
   <br>
   <br>
-  <div class="row">
+  <div class="row" id="201">
     <div class="col-md-6" class="col-sm-pull-5">
       <div class="product-photo">
         <img src="/img/products/Dassault.jpg" height="300" width="475">
@@ -68,7 +68,7 @@
 </div>
 <br>
 <br>
-<div class="row">
+<div class="row" id="202">
   <div class="col-md-6" class="col-sm-pull-5">
     <div class="product-photo">
       <img src="/img/products/Embraer.jpg" height="300" width="475">
@@ -85,7 +85,7 @@
 </div>
 <br>
 <br>
-<div class="row">
+<div class="row" id="203">
   <div class="col-md-6" class="col-sm-pull-5">
     <div class="product-photo">
       <img src="/img/products/Embraer2.jpg" height="300" width="475">
@@ -101,7 +101,7 @@
 </div>
 </div>
 <br>
-<div class="row">
+<div class="row" id="204">
   <div class="col-md-6" class="col-sm-pull-5">
     <div class="product-photo">
       <img src="/img/products/Boeing.jpg" height="300" width="475">
@@ -150,5 +150,17 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function($) {
+      var vars = {};
+      var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+      });
+      if(typeof vars.productId != "undefined"){
+        var productId = vars.productId;
+        var pos = $(window).scrollTop();
+        $("html, body").animate({ scrollTop: $("#"+productId.toString()).offset().top }, 2000);
+      }});
+    </script>
     <script src="/js/bootstrap.min.js"></script>
-    </html>
+</html>
