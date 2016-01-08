@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -58,7 +58,7 @@
   <br>
   <br>
   <br>
-  <div class="row">
+  <div class="row" id="107">
     <div class="col-md-6" class="col-sm-pull-5">
       <div class="product-photo">
         <img src="/img/products/Maserati.jpg" height="300" width="475">
@@ -75,7 +75,7 @@
   </div>
 </div>
 <br>
-<div class="row">
+<div class="row" id="108">
   <div class="col-md-6" class="col-sm-pull-5">
     <div class="product-photo">
       <img src="/img/products/Jaguar.jpg" height="300" width="475">
@@ -92,7 +92,7 @@
 </div>
 </div>
 <br>
-<div class="row">
+<div class="row" id="109">
   <div class="col-md-6" class="col-sm-pull-5">
     <div class="product-photo">
       <img src="/img/products/Lamborghini.jpg" height="300" width="475">
@@ -109,7 +109,7 @@
 </div>
 </div>
 <br>
-<div class="row">
+<div class="row" id="110">
   <div class="col-md-6" class="col-sm-pull-5">
     <div class="product-photo">
       <img src="/img/products/Audi.jpg" height="300" width="475">
@@ -126,7 +126,7 @@
 </div>
 </div>
 <br>
-<div class="row">
+<div class="row" id="111">
   <div class="col-md-6" class="col-sm-pull-5">
     <div class="product-photo">
       <img src="/img/products/Aston-Martin.jpg" height="300" width="475">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <br>
-<div class="row">
+<div class="row" id="112">
   <div class="col-md-6" class="col-sm-pull-5">
     <div class="product-photo">
       <img src="/img/products/Mclaren.jpg" height="300" width="475">
@@ -195,5 +195,30 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function($) {
+      if ($(this).width() < 800) {
+        $('#extra-icons').hide();
+      } else {
+        $('#extra-icons').show();
+      }
+      $(window).resize(function() {
+        if ($(this).width() < 800) {
+          $('#extra-icons').hide();
+        } else {
+          $('#extra-icons').show();
+        }
+      });
+      var vars = {};
+      var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+      });
+      if(typeof vars.productId != "undefined"){
+        var productId = vars.productId;
+        var pos = $(window).scrollTop();
+        $("html, body").animate({ scrollTop: $("#"+productId.toString()).offset().top }, 1500);
+      }
+    });
+    </script>
     <script src="/js/bootstrap.min.js"></script>
     </html>
