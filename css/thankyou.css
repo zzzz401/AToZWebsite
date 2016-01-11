@@ -1,0 +1,35 @@
+body{
+  max-width: 1080px;
+  margin: 0 auto !important;
+  float: none !important;
+  border-style: solid;
+  border-color: black;
+  border-bottom-color: white;
+  padding-right: 0 !important;
+  min-width: 600px;
+}
+html {
+  background-color: #D9D9D9;
+  padding-right: 0 !important;
+}
+.background-accent {
+  background: url('/img/background.jpg') no-repeat center center scroll;
+  padding: 100px 0;
+}
+
+footer {
+  margin: 0px;
+}
+
+.navbar-right {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto;
+  font-size: 100px:
+}
+
+.modal-open {
+  overflow: scroll;
+}

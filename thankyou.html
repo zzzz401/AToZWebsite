@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A To Z Luxury Vehicles">
+  <meta name="author" content="Aidan Law Afl@Aidan-Law.com">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <meta name="theme-color" content="#FF0000">
+  <title>A-Z Luxury Vehicles</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/index.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a class="navbar-brand" href="../index.html"><img src="/img/logo.png" width="25" height="25"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/products/cars.html">Cars</a></li>
+                <li><a href="/products/boats.html">Boats</a></li>
+                <li><a href="/products/air.html">Air</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/about.html">About</a>
+            </li>
+            <li>
+              <a href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </ul>
+        <ul class="nav navbar-nav" style="float: right">
+          <li>
+            <p class="navbar-text">Sales: (815) 459-2505</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <br>
+    <br>
+    <br>
+    <div class="jumbotron">
+      <h3 align="center">Thank You For Your Purchase!<br>
+        You Will be redirected back to our homepage in 3 seconds!
+      </h3>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+  </body>
+  <footer>
+    <div class="container">
+      <div class="footerText">
+        <div id="disclaimer" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><i class="fa fa-info-circle"></i>Disclaimer</h4>
+              </div>
+              <div class="modal-body">
+                <p>This Virtual Enterprise online store is for educational purposes only.<br>
+                  Created by the VEI class at Crystal Lake Central High School.<br>
+                  To Learn More Please Visit <a href="https://veinternational.org">VeiInternational.org</a>.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <p align="center">Copyright &copy; A To Z Luxury Vehicles 2015-2016<br> This Virtual Enterprise online store is for educational purposes only.
+            <br> Click the Disclaimer for more.</p>
+            <p align="center"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#disclaimer"><i class="fa fa-info"></i> Disclaimer</button></p>
+        </div>
+        </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+        setTimeout(redirect, 3000);
+        function redirect() {
+          //  window.location = "/index.html";
+        }
+        $(document).ready(function($) {
+          if ($(this).width() < 800) {
+            $('#extra-icons').hide();
+          } else {
+            $('#extra-icons').show();
+          }
+        });
+        $(window).resize(function() {
+          if ($(this).width() < 800) {
+            $('#extra-icons').hide();
+          } else {
+            $('#extra-icons').show();
+          }
+        });
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+        </html>

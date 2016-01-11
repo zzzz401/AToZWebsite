@@ -145,7 +145,7 @@
       if(typeof vars.productId != "undefined"){
         var productId = vars.productId;
         var pos = $(window).scrollTop();
-        $("html, body").animate({ scrollTop: $("#"+productId.toString()).offset().top }, 1500);
+        $("html, body").animate({ scrollTop: $("#"+productId.toString()).offset().top-50}, 1500);
       }
     });
     </script>
