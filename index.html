@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<div id="header">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
   <title>A-Z Luxury Vehicles</title>
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/index.css" rel="stylesheet">
-</head>
+</div>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -31,9 +31,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="/products/cars.html">Cars</a></li>
-                <li><a href="/products/boats.html">Boats</a></li>
-                <li><a href="/products/air.html">Air</a></li>
+                <li><a href="/products/cars.html"><i class="fa fa-car"></i> Cars</a></li>
+                <li><a href="/products/boats.html"><i class="fa fa-ship"></i> Boats</a></li>
+                <li><a href="/products/air.html"><i class="fa fa-plane"></i> Airplanes</a></li>
               </ul>
             </li>
             <li>
@@ -58,15 +58,15 @@
   <div id="carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel" data-slide-to="1"></li>
-      <li data-target="#carousel" data-slide-to="2"></li>
+      <li data-target="#carousel" data-slide-to="1" class="active"></li>
+      <li data-target="#carousel" data-slide-to="2" class="active"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="item active">
         <img class="first-slide" src="/img/products/carousel/Audi.jpg" alt="First slide">
         <div class="container">
           <div class="carousel-caption">
-            <p><a class="btn btn-lg btn-default" href="#" role="button"><i class="fa fa-shopping-cart"></i> Buy Now!</a></p>
+            <p><a class="btn btn-lg btn-default" href="/products/cars2.html?productId=110" role="button"><i class="fa fa-clock-o"></i> Rent Now!</a></p>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
         <img class="second-slide" src="/img/products/carousel/Solange.jpg" alt="Second slide">
         <div class="container">
           <div class="carousel-caption">
-            <p><a class="btn btn-lg btn-default" href="#" role="button"><i class="fa fa-shopping-cart"></i> Learn More!</a></p>
+            <p><a class="btn btn-lg btn-default" href="/products/boats.html?productId=302" role="button"><i class="fa fa-cart-plus"></i> Buy Now!</a></p>
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@
         <img class="third-slide" src="/img/products/carousel/Embraer.jpg" alt="Third slide">
         <div class="container">
           <div class="carousel-caption">
-            <p><a class="btn btn-lg btn-default" href="#" role="button"><i class="fa fa-shopping-cart"></i> Order Now!</a></p>
+            <p><a class="btn btn-lg btn-default" href="/products/air.html?productId=202" role="button"><i class="fa fa-shopping-cart"></i> Order Now!</a></p>
           </div>
         </div>
       </div>
@@ -129,7 +129,7 @@
       </div>
     </div>
   </body>
-  <footer>
+  <div id="footer">
     <div class="container">
       <div class="footerText">
         <div id="disclaimer" class="modal fade" role="dialog">
@@ -155,7 +155,7 @@
             <br> Click the Disclaimer for more.</p>
             <p align="center"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#disclaimer"><i class="fa fa-info"></i> Disclaimer</button></p>          </div>
           </div>
-        </footer>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>
         $(document).ready(function($) {
