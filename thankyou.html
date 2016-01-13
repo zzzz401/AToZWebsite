@@ -7,7 +7,7 @@
   <meta name="description" content="A To Z Luxury Vehicles">
   <meta name="author" content="Aidan Law Afl@Aidan-Law.com">
   <link rel="icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-aawesome/4.4.0/css/font-awesome.min.css">
   <meta name="theme-color" content="#FF0000">
   <title>A-Z Luxury Vehicles</title>
   <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
         </button>
-        <a class="navbar-brand" href="../index.html"><img src="/img/logo.png" width="25" height="25"></a>
+        <a class="navbar-brand" href="../index.html"><img src="/img/logo.png"></a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
@@ -89,29 +89,29 @@
           <p align="center">Copyright &copy; A To Z Luxury Vehicles 2015-2016<br> This Virtual Enterprise online store is for educational purposes only.
             <br> Click the Disclaimer for more.</p>
             <p align="center"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#disclaimer"><i class="fa fa-info"></i> Disclaimer</button></p>
+          </div>
         </div>
-        </div>
-        </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>
-        setTimeout(redirect, 3000);
-        function redirect() {
-          //  window.location = "/index.html";
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script>
+      setTimeout(redirect, 3000);
+      function redirect() {
+        //  window.location = "/index.html";
+      }
+      $(document).ready(function($) {
+        if ($(this).width() < 800) {
+          $('#extra-icons').hide();
+        } else {
+          $('#extra-icons').show();
         }
-        $(document).ready(function($) {
-          if ($(this).width() < 800) {
-            $('#extra-icons').hide();
-          } else {
-            $('#extra-icons').show();
-          }
-        });
-        $(window).resize(function() {
-          if ($(this).width() < 800) {
-            $('#extra-icons').hide();
-          } else {
-            $('#extra-icons').show();
-          }
-        });
-        </script>
-        <script src="js/bootstrap.min.js"></script>
-        </html>
+      });
+      $(window).resize(function() {
+        if ($(this).width() < 800) {
+          $('#extra-icons').hide();
+        } else {
+          $('#extra-icons').show();
+        }
+      });
+      </script>
+      <script src="js/bootstrap.min.js"></script>
+      </html>
