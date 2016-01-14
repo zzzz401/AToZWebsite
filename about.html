@@ -1,5 +1,5 @@
-<html lang="en">
-<div id="header">
+<!DOCTYPE html>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,25 +11,28 @@
   <title>A-Z Luxury Vehicles</title>
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/about.css" rel="stylesheet">
-</div>
+</head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../index.html"><img src="/img/logo.png"></a>
+        <a class="navbar-brand" href="/index.html"><img src="/img/logo.png"></a>
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="/products/cars.html">Cars</a></li>
-                <li><a href="/products/boats.html">Boats</a></li>
-                <li><a href="/products/air.html">Air</a></li>
+                <li><a href="/products/cars.html"><i class="fa fa-car"></i> Cars</a></li>
+                <li><a href="/products/boats.html"><i class="fa fa-ship"></i> Boats</a></li>
+                <li><a href="/products/air.html"><i class="fa fa-plane"></i> Airplanes</a></li>
               </ul>
             </li>
             <li>
@@ -40,9 +43,12 @@
             </li>
           </ul>
         </ul>
-        <ul class="nav navbar-nav" style="float: right">
+        <ul class="nav navbar-nav" style="float: right" id="extra-icons">
           <li>
             <p class="navbar-text">Sales: (815) 459-2505</p>
+          </li>
+          <li>
+            <a href="https://twitter.com/atozvei"><i class="fa fa-twitter"></i></a>
           </li>
         </ul>
       </div>
@@ -53,7 +59,7 @@
 <br>
 <br>
 <h1 align="center">To Be Determined!</h1>
-<div id="footer">
+<footer>
   <div class="container">
     <div class="footerText">
       <div id="disclaimer" class="modal fade" role="dialog">
@@ -74,6 +80,8 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
         <br>
         <div align="center">
           <p>Copyright &copy; A To Z Luxury Vehicles 2015-2016<br> This Virtual Enterprise online store is for educational purposes only.
@@ -82,7 +90,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     </html>

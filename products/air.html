@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<div id="header">
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +11,7 @@
   <title>A-Z Luxury Vehicles</title>
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/products.css" rel="stylesheet">
-</div>
+</head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -31,9 +30,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="/products/cars.html">Cars</a></li>
-                <li><a href="/products/boats.html">Boats</a></li>
-                <li><a href="/products/air.html">Air</a></li>
+                <li><a href="/products/cars.html"><i class="fa fa-car"></i> Cars</a></li>
+                <li><a href="/products/boats.html"><i class="fa fa-ship"></i> Boats</a></li>
+                <li><a href="/products/air.html"><i class="fa fa-plane"></i> Airplanes</a></li>
               </ul>
             </li>
             <li>
@@ -126,7 +125,7 @@
 <br>
 </body>
 <br>
-<div id="footer">
+<footer>
   <div class="container">
     <div class="footerText">
       <div id="disclaimer" class="modal fade" role="dialog">
@@ -147,6 +146,8 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
         <br>
         <div align="center">
           <p>Copyright &copy; A To Z Luxury Vehicles 2015-2016<br> This Virtual Enterprise online store is for educational purposes only.
@@ -155,32 +156,32 @@
           </div>
         </div>
       </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-    $(document).ready(function($) {
-      if ($(this).width() < 800) {
-        $('#extra-icons').hide();
-      } else {
-        $('#extra-icons').show();
-      }
-      $(window).resize(function() {
+    </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script>
+      $(document).ready(function($) {
         if ($(this).width() < 800) {
           $('#extra-icons').hide();
         } else {
           $('#extra-icons').show();
         }
+        $(window).resize(function() {
+          if ($(this).width() < 800) {
+            $('#extra-icons').hide();
+          } else {
+            $('#extra-icons').show();
+          }
+        });
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+          vars[key] = value;
+        });
+        if(typeof vars.productId != "undefined"){
+          var productId = vars.productId;
+          var pos = $(window).scrollTop();
+          $("html, body").animate({ scrollTop: $("#"+productId.toString()).offset().top-50}, 1500);
+        }
       });
-      var vars = {};
-      var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-      });
-      if(typeof vars.productId != "undefined"){
-        var productId = vars.productId;
-        var pos = $(window).scrollTop();
-        $("html, body").animate({ scrollTop: $("#"+productId.toString()).offset().top-50}, 1500);
-      }
-    });
-    </script>
-    <script src="/js/bootstrap.min.js"></script>
-    </html>
+      </script>
+      <script src="/js/bootstrap.min.js"></script>
+      </html>

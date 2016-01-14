@@ -16,8 +16,9 @@ html {
   background: url('/img/background.jpg') no-repeat center center scroll;
   padding: 100px 0;
 }
-section {
-  padding: 75px 0;
+.section {
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .section-heading {
   margin: auto;

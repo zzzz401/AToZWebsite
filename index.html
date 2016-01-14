@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<div id="header">
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +11,7 @@
   <title>A-Z Luxury Vehicles</title>
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/index.css" rel="stylesheet">
-</div>
+</head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -74,7 +73,7 @@
         <img class="second-slide" src="/img/products/carousel/Solange.jpg" alt="Second slide">
         <div class="container">
           <div class="carousel-caption">
-            <p><a class="btn btn-lg btn-default" href="/products/boats.html?productId=302" role="button"><i class="fa fa-cart-plus"></i> Buy Now!</a></p>
+            <p><a class="btn btn-lg btn-default" href="/products/boats.html?productId=302" role="button"><i class="fa fa-plus-square"></i> Order Now!</a></p>
           </div>
         </div>
       </div>
@@ -82,7 +81,7 @@
         <img class="third-slide" src="/img/products/carousel/Embraer.jpg" alt="Third slide">
         <div class="container">
           <div class="carousel-caption">
-            <p><a class="btn btn-lg btn-default" href="/products/air.html?productId=202" role="button"><i class="fa fa-shopping-cart"></i> Order Now!</a></p>
+            <p><a class="btn btn-lg btn-default" href="/products/air.html?productId=202" role="button"><i class="fa fa-shopping-cart"></i> Buy Now!</a></p>
           </div>
         </div>
       </div>
@@ -96,85 +95,60 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <div style="text-align: center">
-    <img src="img/banner.jpg">
-  </div>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="section-heading" font-size="2em">To be Determined by Marketing!</h1>
-        </div>
-      </div>
+  <div class="section">
+    <h1 align="center">Welcome To <img src="/img/inline.png"> Luxury Vehicles</h1>
+    <h4 align="center">
+      We have a well educated and comitted sales team, ready to help you with any vehicle needs.
+      You are welcome to browse and look at our wide selection of Land, Air, and Sea vehicles.
+      If you have any questions you are more then welcome to call or email us.</h3>
     </div>
-  </section>
-  <aside class="background-accent"></aside>
-  <div class="modal fade" tabindex="-1" role="dialog" id="warning">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="modal-title"><i class="fa fa-exclamation-triangle"></i>Warning</h3>
-        </div>
-        <div class="modal-body">
-          <h3 align="center">Welcome to A To Z Luxury Vehicles!<br>
-            Unfortunately Our Website Isn't Ready Yet.<br>
-            Please Come Back Soon!</h3>
-            <p align="center">PS. You Can't Buy Anything Yet!</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-  <div id="footer">
-    <div class="container">
-      <div class="footerText">
-        <div id="disclaimer" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title"><i class="fa fa-info-circle"></i>Disclaimer</h4>
-              </div>
-              <div class="modal-body">
-                <p>This Virtual Enterprise online store is for educational purposes only.<br>
-                  Created by the VEI class at Crystal Lake Central High School.<br>
-                  To Learn More Please Visit <a href="https://veinternational.org">VeiInternational.org</a>.</p>
+    <br>
+    <aside class="background-accent"></aside>
+    <footer>
+      <div class="container">
+        <div class="footerText">
+          <div id="disclaimer" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title"><i class="fa fa-info-circle"></i> Disclaimer</h4>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <div class="modal-body">
+                  <p>This Virtual Enterprise online store is for educational purposes only.<br>
+                    Created by the VEI class at Crystal Lake Central High School.<br>
+                    To Learn More Please Visit <a href="https://veinternational.org">VeiInternational.org</a>.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <br>
-          <p align="center">Copyright &copy; A To Z Luxury Vehicles 2015-2016<br> This Virtual Enterprise online store is for educational purposes only.
-            <br> Click the Disclaimer for more.</p>
-            <p align="center"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#disclaimer"><i class="fa fa-info"></i> Disclaimer</button></p>          </div>
-          </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>
-        $(document).ready(function($) {
-          if ($(this).width() < 800) {
-            $('#extra-icons').hide();
-          } else {
-            $('#extra-icons').show();
-          }
-        });
-        $(window).resize(function() {
-          if ($(this).width() < 800) {
-            $('#extra-icons').hide();
-          } else {
-            $('#extra-icons').show();
-          }
-        });
-        </script>
-        <script src="js/bootstrap.min.js"></script>
-        <script>
-        $('#warning').modal('toggle');
-        </script>
-        </html>
+        <br>
+        <div align="center">
+          <p>Copyright &copy; A To Z Luxury Vehicles 2015-2016<br> This Virtual Enterprise online store is for educational purposes only.
+            <br> Click the Disclaimer for more.</p>
+            <p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#disclaimer"><i class="fa fa-info"></i> Disclaimer</button></p>
+          </div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          <script>
+          $(document).ready(function($) {
+            if ($(this).width() < 800) {
+              $('#extra-icons').hide();
+            } else {
+              $('#extra-icons').show();
+            }
+          });
+          $(window).resize(function() {
+            if ($(this).width() < 800) {
+              $('#extra-icons').hide();
+            } else {
+              $('#extra-icons').show();
+            }
+          });
+          </script>
+          <script src="js/bootstrap.min.js"></script>
+          </html>
