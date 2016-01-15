@@ -11,6 +11,7 @@
   <title>A-Z Luxury Vehicles</title>
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/contact.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -57,7 +58,36 @@
   <br>
   <br>
   <br>
-  <h1 align="center">To Be Determined!</h1>
+  <div id="map">
+    <!-- Where The Leaflet JS Goes -->
+  </div>
+  <br>
+  <div class="contact">
+    <h1 align="center">Methods of Contact <i class="fa fa-caret-down"></i></h1>
+    <br>
+    <h3 align="center"><i class="fa fa-phone"></i> Phone: (815) 459-2505</h3>
+    <br>
+    <h3 align="center"><i class="fa fa-envelope"></i> E-Mail: <a href="mailto:atoz@d155.org">AToZ@d155.org</a></h3>
+  </div>
+  <div id="contributions" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><i class="fa fa-code"></i> Map Sources</h4>
+        </div>
+        <div class="modal-body">
+          <p>Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a><br>
+            Imagery &copy; <a href="http://mapbox.com">Mapbox</a><br>
+            Contributors <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <footer>
   <div class="container">
@@ -82,15 +112,30 @@
         </div>
       </div>
     </div>
-        <br>
-        <div align="center">
-          <p>Copyright &copy; A To Z Luxury Vehicles 2015-2016<br> This Virtual Enterprise online store is for educational purposes only.
-            <br> Click the Disclaimer for more.</p>
-            <p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#disclaimer"><i class="fa fa-info"></i> Disclaimer</button></p>
-          </div>
-        </div>
+    <br>
+    <div align="center">
+      <p>Copyright &copy; A To Z Luxury Vehicles 2015-2016<br> This Virtual Enterprise online store is for educational purposes only.
+        <br> Click the Disclaimer for more.</p>
+        <p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#disclaimer"><i class="fa fa-info"></i> Disclaimer</button></p>
       </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    </html>
+    </div>
+  </div>
+</footer>
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<script>
+var map = L.map('map').setView([42.237065, -88.322574], 14);
+var marker = L.marker([42.237065, -88.322574]).addTo(map);
+marker.bindPopup("<b>A To Z Luxury Vehicles</b><br>45 W Franklin St, Crystal Lake, IL 60014").openPopup();
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+  attribution: '<a href="#contributions" onclick="sourcesTrigger()">Sources</a>',
+  maxZoom: 18,
+  id: 'aidanlaw.of7fdc9f',
+  accessToken: 'pk.eyJ1IjoiYWlkYW5sYXciLCJhIjoiY2lpYnMwOGd0MDFpeHdkbHp3cTlwMXNtZCJ9.e4dmOxdtFAFZsdzI2MMX7w'
+}).addTo(map);
+function sourcesTrigger(){
+  $('#contributions').modal('show');
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</html>

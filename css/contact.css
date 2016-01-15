@@ -22,7 +22,7 @@ html {
 footer {
   margin: 0px;
   bottom: 0;
-  position: bottom;
+  position: inherit;
 }
 
 .navbar-right {
@@ -36,4 +36,13 @@ footer {
 
 .modal-open {
   overflow: scroll;
+}
+
+#map {
+  height: 180px;
+}
+.contact {
+  padding: 10;
+  align-items: center;
+  align-content: center;
 }
