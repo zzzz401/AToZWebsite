@@ -1,0 +1,4 @@
+ErrorDocument 404 http://a-zvei.com/error.html
+ErrorDocument 401 http://a-zvei.com/error.html
+ErrorDocument 403 http://a-zvei.com/error.html
+ErrorDocument 500 http://a-zvei.com/error.html
