@@ -98,19 +98,24 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
+setTimeout(redirect, 3000);
+function redirect() {
+  window.location = "/index.html";
+}
 $(document).ready(function($) {
   if ($(this).width() < 800) {
     $('#extra-icons').hide();
   } else {
     $('#extra-icons').show();
   }
-  $(window).resize(function() {
-    if ($(this).width() < 800) {
-      $('#extra-icons').hide();
-    } else {
-      $('#extra-icons').show();
-    }
-  });
-  </script>
-  <script src="/js/bootstrap.min.js"></script>
-  </html>
+});
+$(window).resize(function() {
+  if ($(this).width() < 800) {
+    $('#extra-icons').hide();
+  } else {
+    $('#extra-icons').show();
+  }
+});
+</script>
+<script src="/js/bootstrap.min.js"></script>
+</html>
