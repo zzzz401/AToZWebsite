@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +10,7 @@
   <meta name="theme-color" content="#FF0000">
   <title>A-Z Luxury Vehicles</title>
   <link href="/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/css/thankyou.css" rel="stylesheet">
+  <link href="/css/error.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -55,21 +54,17 @@
       </div>
     </div>
   </nav>
-</div>
-</div>
-</nav>
-<body>
   <br>
   <br>
   <div class="jumbotron">
-    <h2 align="center"><i class="fa fa-thumbs-up"></i> Thank You For Your Purchase!</h2>
+    <h2 align="center"><i class="fa fa-question-circle"></i> What Your Looking For Is Not Here.</h2>
     <h3 align="center">You Will be redirected back to our homepage in 3 seconds!</h3>
-    </h3>
-    <br>
-    <br>
-  </div>
+  </h3>
+  <br>
+  <br>
+</div>
 </body>
-<div id="footer">
+<footer>
   <div class="container">
     <div class="footerText">
       <div id="disclaimer" class="modal fade" role="dialog">
@@ -99,26 +94,23 @@
         <p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#disclaimer"><i class="fa fa-info"></i> Disclaimer</button></p>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-    setTimeout(redirect, 3000);
-    function redirect() {
-      window.location = "/index.html";
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function($) {
+  if ($(this).width() < 800) {
+    $('#extra-icons').hide();
+  } else {
+    $('#extra-icons').show();
+  }
+  $(window).resize(function() {
+    if ($(this).width() < 800) {
+      $('#extra-icons').hide();
+    } else {
+      $('#extra-icons').show();
     }
-    $(document).ready(function($) {
-      if ($(this).width() < 800) {
-        $('#extra-icons').hide();
-      } else {
-        $('#extra-icons').show();
-      }
-    });
-    $(window).resize(function() {
-      if ($(this).width() < 800) {
-        $('#extra-icons').hide();
-      } else {
-        $('#extra-icons').show();
-      }
-    });
-    </script>
-    <script src="js/bootstrap.min.js"></script>
-    </html>
+  });
+  </script>
+  <script src="/js/bootstrap.min.js"></script>
+  </html>
