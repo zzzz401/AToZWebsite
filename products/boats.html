@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -80,15 +81,15 @@
   <div class="col-md-6" class="col-sm-pull-5">
     <div class="product-photo">
       <img src="/img/products/Solange.jpg">
+    </div>
   </div>
-</div>
-<div class="col-md-6">
-  <div class="product-paragraph">
-    <h1>Solandge Burgess</h1>
-    <p>This mega yacht will satisfy all your needs and will go above and beyond all your expectations. Starting off with its six decks and its suite that provides you with a 180 degree view that will leave you breathless.  Not to mention the fully equipped gym with sliding doors and the two Jacuzzis along with a swimming pool on board. And that’s not all it offers it also comes with a large sauna, spa, and state-of-the-art cinema what is not to love about this luxurious yacht it is truly luxury at its finest.</p>
-    <a href="https://portal.veinternational.org/buybuttons/us06419/btn/solandge-burgess-302/" role="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+  <div class="col-md-6">
+    <div class="product-paragraph">
+      <h1>Solandge Burgess</h1>
+      <p>This mega yacht will satisfy all your needs and will go above and beyond all your expectations. Starting off with its six decks and its suite that provides you with a 180 degree view that will leave you breathless.  Not to mention the fully equipped gym with sliding doors and the two Jacuzzis along with a swimming pool on board. And that’s not all it offers it also comes with a large sauna, spa, and state-of-the-art cinema what is not to love about this luxurious yacht it is truly luxury at its finest.</p>
+      <a href="https://portal.veinternational.org/buybuttons/us06419/btn/solandge-burgess-302/" role="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+    </div>
   </div>
-</div>
 </div>
 <br>
 </body>
@@ -119,40 +120,40 @@
         </div>
       </div>
     </div>
-        <br>
-        <div align="center">
-          <p>Copyright &copy; A To Z Luxury Vehicles 2015-2016<br> This Virtual Enterprise online store is for educational purposes only.
-            <br> Click the Disclaimer for more.</p>
-            <p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#disclaimer"><i class="fa fa-info"></i> Disclaimer</button></p>
-          </div>
-        </div>
+    <br>
+    <div align="center">
+      <p>Copyright &copy; A To Z Luxury Vehicles 2015-2016<br> This Virtual Enterprise online store is for educational purposes only.
+        <br> Click the Disclaimer for more.</p>
+        <p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#disclaimer"><i class="fa fa-info"></i> Disclaimer</button></p>
       </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-    $(document).ready(function($) {
-      if ($(this).width() < 800) {
-        $('#extra-icons').hide();
-      } else {
-        $('#extra-icons').show();
-      }
-      $(window).resize(function() {
-        if ($(this).width() < 800) {
-          $('#extra-icons').hide();
-        } else {
-          $('#extra-icons').show();
-        }
-      });
-      var vars = {};
-      var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-      });
-      if(typeof vars.productId != "undefined"){
-        var productId = vars.productId;
-        var pos = $(window).scrollTop();
-        $("html, body").animate({ scrollTop: $("#"+productId.toString()).offset().top-50}, 1500);
-      }
-    });
-    </script>
-    <script src="/js/bootstrap.min.js"></script>
-    </html>
+    </div>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function($) {
+  if ($(this).width() < 800) {
+    $('#extra-icons').hide();
+  } else {
+    $('#extra-icons').show();
+  }
+  $(window).resize(function() {
+    if ($(this).width() < 800) {
+      $('#extra-icons').hide();
+    } else {
+      $('#extra-icons').show();
+    }
+  });
+  var vars = {};
+  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+    vars[key] = value;
+  });
+  if(typeof vars.productId != "undefined"){
+    var productId = vars.productId;
+    var pos = $(window).scrollTop();
+    $("html, body").animate({ scrollTop: $("#"+productId.toString()).offset().top-50}, 1500);
+  }
+});
+</script>
+<script src="/js/bootstrap.min.js"></script>
+</html>

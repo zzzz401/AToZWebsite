@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -148,40 +149,40 @@
         </div>
       </div>
     </div>
-        <br>
-        <div align="center">
-          <p>Copyright &copy; A To Z Luxury Vehicles 2015-2016<br> This Virtual Enterprise online store is for educational purposes only.
-            <br> Click the Disclaimer for more.</p>
-            <p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#disclaimer"><i class="fa fa-info"></i> Disclaimer</button></p>
-          </div>
-        </div>
+    <br>
+    <div align="center">
+      <p>Copyright &copy; A To Z Luxury Vehicles 2015-2016<br> This Virtual Enterprise online store is for educational purposes only.
+        <br> Click the Disclaimer for more.</p>
+        <p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#disclaimer"><i class="fa fa-info"></i> Disclaimer</button></p>
       </div>
-    </footer>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script>
-      $(document).ready(function($) {
-        if ($(this).width() < 800) {
-          $('#extra-icons').hide();
-        } else {
-          $('#extra-icons').show();
-        }
-        $(window).resize(function() {
-          if ($(this).width() < 800) {
-            $('#extra-icons').hide();
-          } else {
-            $('#extra-icons').show();
-          }
-        });
-        var vars = {};
-        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-          vars[key] = value;
-        });
-        if(typeof vars.productId != "undefined"){
-          var productId = vars.productId;
-          var pos = $(window).scrollTop();
-          $("html, body").animate({ scrollTop: $("#"+productId.toString()).offset().top-50}, 1500);
-        }
-      });
-      </script>
-      <script src="/js/bootstrap.min.js"></script>
-      </html>
+    </div>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function($) {
+  if ($(this).width() < 800) {
+    $('#extra-icons').hide();
+  } else {
+    $('#extra-icons').show();
+  }
+  $(window).resize(function() {
+    if ($(this).width() < 800) {
+      $('#extra-icons').hide();
+    } else {
+      $('#extra-icons').show();
+    }
+  });
+  var vars = {};
+  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+    vars[key] = value;
+  });
+  if(typeof vars.productId != "undefined"){
+    var productId = vars.productId;
+    var pos = $(window).scrollTop();
+    $("html, body").animate({ scrollTop: $("#"+productId.toString()).offset().top-50}, 1500);
+  }
+});
+</script>
+<script src="/js/bootstrap.min.js"></script>
+</html>

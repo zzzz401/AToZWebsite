@@ -37,3 +37,7 @@ footer {
 .modal-open {
   overflow: scroll;
 }
+
+.spacer {
+  height: 50%;
+}
