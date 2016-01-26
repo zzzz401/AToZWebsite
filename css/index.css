@@ -2,15 +2,20 @@ body{
   max-width: 1080px;
   margin: 0 auto !important;
   float: none !important;
+  padding-right: 0 !important;
+  min-width: 600px;
+  height: 100%;
   border-style: solid;
   border-color: black;
   border-bottom-color: white;
-  padding-right: 0 !important;
-  min-width: 600px;
 }
 html {
   background-color: #D9D9D9;
   padding-right: 0 !important;
+  border-style: solid;
+  border-color: white;
+  height: 100%;
+  min-height: 1150px;
 }
 .background-accent {
   background: url('/img/background.jpg') no-repeat center center scroll;
@@ -32,7 +37,9 @@ html {
   padding: 10px;
 }
 footer {
-  margin: 0px;
+  bottom: 0;
+  position: inherit;
+  height: 125px;
 }
 @media(max-width:768px) {
   section {

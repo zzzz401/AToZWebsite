@@ -2,17 +2,21 @@ body{
   max-width: 1080px;
   margin: 0 auto !important;
   float: none !important;
-  border-style: solid;
-  border-color: black;
-  border-bottom-color: white;
   padding-right: 0 !important;
   min-width: 600px;
   height: 100%;
+  border-style: solid;
+  border-color: black;
+  border-bottom-color: white;
 }
 html {
   background-color: #D9D9D9;
   padding-right: 0 !important;
-  height: 115%;
+  border-style: solid;
+  border-color: black;
+  border-bottom-color: white;
+  height: 100%;
+  min-height: 1100px;
 }
 .background-accent {
   background: url('/img/background.jpg') no-repeat center center scroll;
@@ -20,8 +24,9 @@ html {
 }
 
 footer {
-  bottom: 10;
-  position: top;
+  bottom: 0;
+  position: inherit;
+  height: 125px;
 }
 
 .navbar-right {
