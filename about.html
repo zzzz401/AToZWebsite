@@ -55,43 +55,66 @@
       </div>
     </div>
   </nav>
-</body>
-<br>
-<br>
-<br>
-<h1 align="center">To Be Determined!</h1>
-<footer>
-  <div class="container">
-    <div class="footerText">
-      <div id="disclaimer" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title"><i class="fa fa-info-circle"></i>Disclaimer</h4>
-            </div>
-            <div class="modal-body">
-              <p>This Virtual Enterprise online store is for educational purposes only.<br>
-                Created by the VEI class at Crystal Lake Central High School.<br>
-                To Learn More Please Visit <a href="https://veinternational.org">VeiInternational.org</a>.</p>
+  </body>
+  <br>
+  <br>
+  <br>
+  <div class="description">
+  <h1 align="center">Company Description</h1>
+  <p align="center">A To Z is a three year VEI Firm Headquartered at 45 West Franklin Street, Crystal Lake, Illinois.
+    A To Z Was established September of 2012 and employs 20 Employees.
+    The primary objective of A to Z is to provide high quality modes of transportation to our target market of teenagers enrolled in the VEI program.
+    Primary products will be cars, planes, and boats. 
+    We also have programs to lease and save money on vehicles.</p>
+</div>
+  <footer>
+    <div class="container">
+      <div class="footerText">
+        <div id="disclaimer" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><i class="fa fa-info-circle"></i>Disclaimer</h4>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <div class="modal-body">
+                <p>This Virtual Enterprise online store is for educational purposes only.<br>
+                  Created by the VEI class at Crystal Lake Central High School.<br>
+                  To Learn More Please Visit <a href="https://veinternational.org">VeiInternational.org</a>.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <br>
-    <div align="center">
-      <p>Copyright &copy; A To Z Luxury Vehicles 2015-2016<br> This Virtual Enterprise online store is for educational purposes only.
-        <br> Click the Disclaimer for more.</p>
-        <p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#disclaimer"><i class="fa fa-info"></i> Disclaimer</button></p>
+      <br>
+      <div align="center">
+        <p>Copyright &copy; A To Z Luxury Vehicles 2015-2016<br> This Virtual Enterprise online store is for educational purposes only.
+          <br> Click the Disclaimer for more.</p>
+          <p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#disclaimer"><i class="fa fa-info"></i> Disclaimer</button></p>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-</html>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+  $(document).ready(function($) {
+    if ($(this).width() < 800) {
+      $('#extra-icons').hide();
+    } else {
+      $('#extra-icons').show();
+    }
+  });
+  $(window).resize(function() {
+    if ($(this).width() < 800) {
+      $('#extra-icons').hide();
+    } else {
+      $('#extra-icons').show();
+    }
+  });
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  </html>

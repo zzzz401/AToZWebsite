@@ -50,15 +50,3 @@ footer {
   align-items: center;
   align-content: center;
 }
-.col-md-12 column {
-  text-align:center;
-}
-.col-md-12 column form {
-  display:inline-block;
-}
-.form-horizontal {
-  max-width: 600px;
-  align-items: baseline;
-  width: 50%;
-  margin: 0 auto;
-}
