@@ -15,7 +15,6 @@ html {
   border-style: solid;
   border-color: white;
   height: 100%;
-  min-height: 1150px;
 }
 .background-accent {
   background: url('/img/background.jpg') no-repeat center center scroll;
@@ -45,7 +44,6 @@ footer {
   height: 40%;
 }
 .packages {
-  border-top: 3px solid;
   border-bottom: 3px solid;
   align-items: center;
   align-content: center;
@@ -74,11 +72,11 @@ footer {
 }
 h2 {
     font-size: 36px;
-    border-bottom: 3px solid;
+    border-bottom: 2px solid;
     padding-left: 80px;
-    border-style: double;
-    border-color: blue;
+    border-color: black;
     border-top-color: white;
     border-right-color: white;
     border-left-color: white;
+    padding-bottom: 10px;
 }
