@@ -86,6 +86,10 @@
     </div>
   </div>
   <br>
+  <div style="text-align:center">
+      <button type="button" class="btn btn-gold btn-lg">Primary</button>
+  </div>
+  <br>
   <br>
 </div>
 <div class="packages">
@@ -107,7 +111,10 @@
 </div>
 <br>
 <div style="align-items:center">
-<button type="button" class="btn btn-warning-outline btn-lg">Large button</button>
+</div>
+<br>
+<div style="text-align:center">
+    <button type="button" class="btn btn-silver btn-lg">Primary</button>
 </div>
 <br>
 <br>
@@ -128,6 +135,10 @@
       <p>To Be Determined.</p>
     </div>
   </div>
+</div>
+<br>
+<div style="text-align:center">
+    <button type="button" class="btn btn-bronze btn-lg">Primary</button>
 </div>
 <br>
 <br>
@@ -164,21 +175,21 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script>
       $(document).ready(function($) {
-        if ($(this).width() < 800) {
+        if ($(this).width() < 900) {
           $('#extra-icons').hide();
-          $("html").css("min-height", "1800px");
+          $("html").css("min-height", "2650px");
         } else {
           $('#extra-icons').show();
-          $("html").css("min-height", "1800px");
+          $("html").css("min-height", "2000px");
         }
       });
       $(window).resize(function() {
-        if ($(this).width() < 800) {
+        if ($(this).width() < 900) {
           $('#extra-icons').hide();
-          $("html").css("min-height", "1800px");
+          $("html").css("min-height", "2650px");
         } else {
           $('#extra-icons').show();
-          $("html").css("min-height", "1800px");
+          $("html").css("min-height", "2000px");
         }
       });
       </script>
