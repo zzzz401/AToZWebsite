@@ -7,7 +7,7 @@
   <meta name="description" content="A To Z Luxury Vehicles">
   <meta name="author" content="Aidan Law Afl@Aidan-Law.com">
   <link rel="icon" href="/img/favicon.ico">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <meta name="theme-color" content="#FF0000">
   <title>A-Z Luxury Vehicles</title>
   <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -62,13 +62,13 @@
   <br>
   <br>
   <div class="explanation">
-    <h1>Explanation of crazy voting system here.</h1>
+    <h1>Explanation of crazy voting system Or Video Here</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis luctus leo. Vestibulum nec volutpat tellus. Nunc lacus tortor, dapibus quis efficitur vel, interdum in neque. Duis auctor erat justo. Vivamus ac dui at enim mattis interdum sit amet ac urna. Sed posuere nunc molestie metus ornare, at ultrices velit consequat. Vivamus blandit diam sit amet sapien accumsan, vitae feugiat felis pretium.</p>
   </div>
   <br>
   <br>
   <br>
-  <div class="packages" style="border-top: 3px solid">
+  <div class="packages" style="border-top: 3px solid" id="401">
     <h2><span style="color:#ffd700">Gold</span> Package</h2>
     <br>
     <div class="row">
@@ -87,12 +87,12 @@
   </div>
   <br>
   <div style="text-align:center">
-      <button type="button" class="btn btn-gold btn-lg">Primary</button>
+    <a href="https://portal.veinternational.org/buybuttons/us06419/btn/gold-trade-show-package-401/" role="button" class="btn btn-gold btn-lg"><i class="fa fa-shopping-bag"></i> Gold Package</a>
   </div>
   <br>
   <br>
 </div>
-<div class="packages">
+<div class="packages" id="402">
   <h2><span style="color:#C0C0C0">Silver</span> Package</h2>
   <br>
   <div class="row">
@@ -114,12 +114,12 @@
 </div>
 <br>
 <div style="text-align:center">
-    <button type="button" class="btn btn-silver btn-lg">Primary</button>
+  <a href="https://portal.veinternational.org/buybuttons/us06419/btn/silver-trade-show-package-402/" role="button" class="btn btn-silver btn-lg"><i class="fa fa-shopping-bag"></i> Silver Package</a>
 </div>
 <br>
 <br>
 </div>
-<div class="packages">
+<div class="packages" id="403">
   <h2><span style="color:#cd7f32">Bronze</span> Package</h2>
   <br>
   <div class="row">
@@ -138,7 +138,7 @@
 </div>
 <br>
 <div style="text-align:center">
-    <button type="button" class="btn btn-bronze btn-lg">Primary</button>
+  <a href="https://portal.veinternational.org/buybuttons/us06419/btn/bronze-trade-show-package-403/" role="button" class="btn btn-bronze btn-lg"><i class="fa fa-shopping-bag"></i> Bronze Package</a>
 </div>
 <br>
 <br>
@@ -175,33 +175,42 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script>
       $(document).ready(function($) {
-        if ($(this).width() < 900) {
+        if ($(this).width() < 850) {
           $('#extra-icons').hide();
-          $("html").css("min-height", "2650px");
+          $("html").css("min-height", "3000px");
         } else {
           $('#extra-icons').show();
-          $("html").css("min-height", "2000px");
+          $("html").css("min-height", "2100px");
+        }
+        $(window).resize(function() {
+          if ($(this).width() < 850) {
+            $('#extra-icons').hide();
+            $("html").css("min-height", "3000px");
+          } else {
+            $('#extra-icons').show();
+            $("html").css("min-height", "2100px");
+          }
+        });
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+          vars[key] = value;
+        });
+        if(typeof vars.productId != "undefined"){
+          var productId = vars.productId;
+          var pos = $(window).scrollTop();
+          $("html, body").animate({ scrollTop: $("#"+productId.toString()).offset().top-50}, 1500);
         }
       });
-      $(window).resize(function() {
-        if ($(this).width() < 900) {
-          $('#extra-icons').hide();
-          $("html").css("min-height", "2650px");
-        } else {
-          $('#extra-icons').show();
-          $("html").css("min-height", "2000px");
-        }
-      });
-      </script>
-      <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-73016615-1', 'auto');
-      ga('send', 'pageview');
+    ga('create', 'UA-73016615-1', 'auto');
+    ga('send', 'pageview');
 
-      </script>
-      <script src="js/bootstrap.min.js"></script>
-      </html>
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    </html>
