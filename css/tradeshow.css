@@ -80,6 +80,51 @@ h2 {
     border-left-color: white;
     padding-bottom: 10px;
 }
+.btn-platinum {
+  color: #CCCCCC;
+  background-color: #FFFFFF;
+  border-color: #CCCCCC;
+}
+
+.btn-platinum:hover,
+.btn-platinum:focus,
+.btn-platinum:active,
+.btn-platinum.active,
+.open .dropdown-toggle.btn-platinum {
+  color: #CCCCCC;
+  background-color: #E6E6E6;
+  border-color: #CCCCCC;
+}
+
+.btn-platinum:active,
+.btn-platinum.active,
+.open .dropdown-toggle.btn-platinum {
+  background-image: none;
+}
+
+.btn-platinum.disabled,
+.btn-platinum[disabled],
+fieldset[disabled] .btn-platinum,
+.btn-platinum.disabled:hover,
+.btn-platinum[disabled]:hover,
+fieldset[disabled] .btn-platinum:hover,
+.btn-platinum.disabled:focus,
+.btn-platinum[disabled]:focus,
+fieldset[disabled] .btn-platinum:focus,
+.btn-platinum.disabled:active,
+.btn-platinum[disabled]:active,
+fieldset[disabled] .btn-platinum:active,
+.btn-platinum.disabled.active,
+.btn-platinum[disabled].active,
+fieldset[disabled] .btn-platinum.active {
+  background-color: #FFFFFF;
+  border-color: #CCCCCC;
+}
+
+.btn-platinum .badge {
+  color: #FFFFFF;
+  background-color: #CCCCCC;
+}
 .btn-gold {
   color: #FFFF00;
   background-color: #FFFFFF;
